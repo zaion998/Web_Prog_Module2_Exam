@@ -11,10 +11,10 @@ body {
     justify-content: center;
     font-family: helvetica, arial, sans-serif;
     background: #333;
-    margin-top: 250px;
+    margin-top: 100px;
     color: #ccc;
     font-size: 16px;
-    padding: 20px;
+    padding: 10px;
     
 }
 
@@ -39,19 +39,16 @@ body {
     display: flex;
     justify-content: center;
     font-size: 14px;
-    line-height: 200px;
     text-align:center;
-    width: 150px;
-    height: 250px;
-    display: block;
+    width: 400px;
+    height: 600px;
     background: #666;
-    -webkit-transform-origin: 50% 99%;
-    transform-origin: 50% 99%;
+    
   }
   .cardcontainer {
     padding: 10px;
     text-align: center;
-    width: 150px;
+    width: 200px;
   }
   
   /* List functionality */
@@ -59,10 +56,10 @@ body {
     margin: 0;
     padding: 0;
   }
-  .tinderesque .list .card {
+  .list .card {
     display: none;
   }
-  .tinderesque .list .current {
+  .list .current {
     display: block;
   }
   
@@ -72,8 +69,8 @@ body {
     display: none;
   }
   
-  .tinderesque .but-nope, .tinderesque .but-yay,
-  .tinderesque .nopes, .tinderesque .yays {
+  .but-nope, .but-yay,
+  .nopes, .yays {
     display: inline-block;
   }
   
@@ -100,19 +97,15 @@ body {
     background: #f00;
   }
   
-  .tinderesque .cardcontainer.yes .card {
-    -webkit-animation: yay 0.7s ease-out;
+  .cardcontainer.yes .card {
+    
     animation: yay 0.7s ease-out;
   }
-  .tinderesque .cardcontainer.nope .card {
-    -webkit-animation: nope 0.7s ease-out;
+  .cardcontainer.nope .card {
+    
     animation: nope 0.7s ease-out;
   }
-  
-  
-  /*
-    Animations, isn't it 'fun' to repeat all of that, just for Safari? :)
-  */
+
   
   @keyframes yay {
     from {
@@ -121,17 +114,6 @@ body {
     }
     to {
       transform: rotate(40deg) translateY(-80px);
-      opacity: 0;
-    }
-  }
-  
-  @-webkit-keyframes yay {
-    from {
-      -webkit-transform: rotate(0deg);
-      opacity: 1;
-    }
-    to {
-      -webkit-transform: rotate(40deg) translateY(-80px);
       opacity: 0;
     }
   }
@@ -147,13 +129,3 @@ body {
     }
   }
   
-  @-webkit-keyframes nope {
-    from {
-      -webkit-transform: rotate(0deg);
-      opacity: 1;
-    }
-    to {
-      -webkit-transform: rotate(-40deg) translateY(-80px);
-      opacity: 0;
-    }
-  }
