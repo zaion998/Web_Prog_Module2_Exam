@@ -85,8 +85,6 @@
     });
   })();
   
- 
-
  document.body.addEventListener('nopecard', function(ev) {
    var container = ev.detail.container;
    var label = container.querySelector('.nopes');
